@@ -54,15 +54,19 @@ let currentQuestion = 0;
     document.getElementById('answer_3').innerHTML = question['answer_3'];
     document.getElementById('answer_4').innerHTML = question['answer_4'];
  }
-
+ /* let correctAnswer; */
  function answer(selection){
     let question = questions[currentQuestion];
     let selectedQuestionNumber = selection.slice(-1);
+    let correctAnswer = `answer_${question['right_answer']}`;
     if(selectedQuestionNumber == question['right_answer']){
         console.log('Die richtige Antwort ist', question[selection]);
         document.getElementById(selection).classList.add('btn-success');
     }else{
         console.log('Das war die falsche antwort!');
         document.getElementById(selection).classList.add('btn-danger');
+        
+        document.getElementById(correctAnswer).classList.add('btn-success');
     }
+    document.getElementById('next-button').disabled = false;
  }
