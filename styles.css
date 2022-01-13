@@ -41,3 +41,25 @@ body{
     background-color: green;
 }
 
+.text-center{
+    text-align: center;
+}
+
+.onTop{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    text-align: center;
+    width: 50%;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.column-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.column-box button{
+    margin-top: 21px;
+    margin-bottom: 16px;
+}
