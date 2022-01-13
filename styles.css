@@ -28,3 +28,11 @@ body{
     cursor: pointer;
 }
 
+.bg_red{
+    background-color: red !important;
+}
+
+.bg_green{
+    background-color: green;
+}
+

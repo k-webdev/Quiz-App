@@ -60,7 +60,9 @@ let currentQuestion = 0;
     let selectedQuestionNumber = selection.slice(-1);
     if(selectedQuestionNumber == question['right_answer']){
         console.log('Die richtige Antwort ist', question[selection]);
+        document.getElementById(selection).classList.add('btn-success');
     }else{
         console.log('Das war die falsche antwort!');
+        document.getElementById(selection).classList.add('btn-danger');
     }
  }
